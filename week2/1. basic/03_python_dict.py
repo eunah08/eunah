@@ -50,7 +50,7 @@ def find_above_average_students(students):
     people = len(students)
     average = total / people
 
-    print(average)
+
     pass
     
     # TODO: 평균 이상인 학생들의 이름을 리스트로 추출하세요
