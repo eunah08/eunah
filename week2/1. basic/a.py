@@ -43,21 +43,29 @@ def rotate_matrix_90(matrix):
     """
     n = len(matrix)
     
-   # TODO: n x n 크기의 새로운 배열을 생성하세요 (0으로 초기화)
-    rotated = []
+    # TODO: n x n 크기의 새로운 배열을 생성하세요 (0으로 초기화)
 
-    for i in range(0, n):  # i를 0부터 n-1까지 반복
-        rotated.append([])  # rotated에 빈 리스트 추가
-        for j in range(0, n):  # j를 0부터 n-1까지 반복
-            rotated[i].append(0)  # rotated[i]에 0 초기화
+    
+        
+    # TODO: 원본 배열의 각 요소를 회전된 위치에 배치하세요
+    # 힌트: (i, j) 위치의 요소는 회전 후 (j, n-1-i) 위치로 이동
 
-    # TODO: 원본 배열의 각 요소를 회전된 위치에 배치
-    # 힌트 (i, j) 위치의 요소는 회전 후 (j, n-1-i) 위치로 이동
-    for i in range(n):  # i를 0부터 n-1까지 반복
-        for j in range(n):  # j를 0부터 n-1까지 반복
-            rotated[j][n-1-i] = matrix[i][j]  # 원본 값을 회전된 위치에 저장
+    
+# 힌트: (i세로, j가로) 위치의 요소는 회전 후 (j, n-1-i) 위치로 이동
+    n = [[],[],[]]
 
-    return rotated  # 회전된 배열 반환
+    # (0,0) (0,1) (0,2)
+    # (1,0) (1,1) (1,2)
+    # (2,0) (2,1) (2,2)
+
+    # (2,0) (1,0) (0,0)
+    # (2,1) (1,1) (0,1)
+    # (2,2) (1,2) (0,2)
+
+
+    pass
+    
+    return rotated
 
 def print_matrix(matrix):
     """배열을 보기 좋게 출력하는 헬퍼 함수"""
@@ -93,5 +101,6 @@ if __name__ == "__main__":
     print("\n회전 후:")
     rotated2 = rotate_matrix_90(matrix2)
     print_matrix(rotated2)
+
 
 
