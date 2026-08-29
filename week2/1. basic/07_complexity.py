@@ -45,19 +45,24 @@ def find_duplicates_sorting(nums):
     """
     방법2: 정렬 후 인접 원소 비교
     시간 복잡도: O(n log n) - 정렬
-    공간 복잡도: O(1) - 정렬을 in-place로 수행
+    공간 복잡도: O(1) - 정렬을 in-place[.sort()]로 수행
     """
     if not nums:
         return []
-    
+
     # TODO: 배열을 정렬하세요 (nums.sort() 사용)
-    pass
-    
+    #nums1 = [4, 3, 2, 7, 8, 2, 3, 1]
+    nums.sort() #[1, 2, 2, 3, 3, 4, 7, 8]
     duplicates = []
-    
-    # TODO: 인접한 원소를 비교하여 중복 찾기
-    # i와 i+1 원소가 같고, duplicates에 없으면 추가
-    pass
+
+
+    # TODO: 인접한 원소를 비교하여 중복 찾기 
+    for i in range(0,len(nums)-1):
+        # i와 i+1 원소가 같고, 
+        if nums[i] == nums[i+1]:
+            # duplicates에 없으면 추가
+            if nums[i] not in duplicates:
+                duplicates.append(nums[i])
     
     return duplicates
 
