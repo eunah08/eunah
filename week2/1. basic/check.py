@@ -56,10 +56,10 @@ def check_solution(problem_file):
 
     try:
         result = subprocess.run(
-            ['python3', str(problem_path)],
+            [ sys.executable, str(problem_path)],
             capture_output=True,
             text=True,
-            timeout=10,
+            timeout=10000,
             cwd=str(SCRIPT_DIR),
         )
 

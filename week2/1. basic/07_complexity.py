@@ -26,7 +26,7 @@ def find_duplicates_brute_force(nums):
     """
     방법1: 이중 반복문 사용
     시간 복잡도: O(n²)
-    공간 복잡도: O(k) - k는 중복 원소 개수
+    공간 복잡도: O(k) - k는 중복 원소 개수 
     """
     duplicates = []
     n = len(nums)
