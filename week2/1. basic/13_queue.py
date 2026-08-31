@@ -48,7 +48,7 @@ def process_print_queue(jobs):
 
     # 작업 처리
         processed.append(returns)
-        print(returns)
+        print(f"처리: {returns}")
     return processed
 
 # 테스트 케이스
