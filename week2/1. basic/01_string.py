@@ -58,10 +58,7 @@ def is_palindrome(s):
         return False
     else:
         return True
-    
-    pass
-    
-    #return False
+
 
 # 테스트 케이스
 if __name__ == "__main__":
