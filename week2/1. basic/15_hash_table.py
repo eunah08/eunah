@@ -55,11 +55,6 @@ def manage_grades(students):
             if score > top_score:
                     top_score = score
                     top_student = name
-                    
-    def find_student_score(students, name):
-        if name in students:
-                return students[name]
-        return None
 
     return average, top_student, top_score
 
