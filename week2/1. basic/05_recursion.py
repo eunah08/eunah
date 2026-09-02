@@ -34,8 +34,8 @@ def factorial(n):
     """
     # TODO: base case를 작성하세요 (탈출 조건)
     # 만약 n=0 or 1 이면 1 반환
-    if n==0 or n==1:
-            return 1
+    if n <= 1:
+        return 1
 
     # TODO: recursive case를 작성하세요 (재귀조건)
     else:
