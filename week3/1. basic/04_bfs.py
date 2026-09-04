@@ -50,8 +50,6 @@ def bfs(graph, start):
     ## 방문한 정점 집합
     visited.append(start)
 
-    pass
-
     # TODO: 큐가 빌 때까지 반복
     qwe = []
     while queue:

@@ -54,7 +54,6 @@ def create_graph(vertices, edges, directed=False):
         ## 무방향 그래프면 반대 방향도 추가
         if not directed:
             graph[v].append(u)
-        False
     return graph
 
 # 테스트 케이스
